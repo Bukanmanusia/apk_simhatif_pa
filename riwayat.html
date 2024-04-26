@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Riwayat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="left_area">
+            <h3>SETORAN HAFALAN<span> JUZ 30</span></h3>
+        </div>
+        <div class="right_area">
+            <img src="al-qur'an.jpg" style="width: 55px; height:50px; border-radius: 50px">
+        </div>
+    </header>
+   <div class="sidebar">
+        <center>
+            <img src="c:\Users\PAVILION\Downloads\flower (7).png" class="profile_image" alt="" style="margin-top: 20px"/>
+            <h4 style="font-size: 13px;">FULANI AMINAH FATWA</h4>
+        </center>
+        <a href="beranda.html"><i class="fas fa-desktop"></i><span>BERANDA</span></a> 
+        <a href="mahasiswa.html"><i class="fas fa-user"></i><span>MAHASISWA</span></a>
+        <a href="setoran.html"><i class="fas fa-table"></i><span>SETORAN</span></a>
+        <a href="riwayat.html"><i class="fas fa-th"></i><span>RIWAYAT</span></a>
+   </div>
+
+   <div class="search-box">
+    <input type="text" placeholder="Search">
+    <div class="search-icon">
+      <i class="fas fa-search"></i>
+    </div>
+<div class="cancel-icon">
+      <i class="fas fa-times"></i>
+    </div>
+<div class="search-data">
+</div>
+
+</div>
+    <script>
+        const searchBox = document.querySelector(".search-box");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const searchInput = document.querySelector("input");
+        const searchData = document.querySelector(".search-data");
+        searchBtn.onclick =()=>{
+        searchBox.classList.add("active");
+        searchBtn.classList.add("active");
+        searchInput.classList.add("active");
+        cancelBtn.classList.add("active");
+        searchInput.focus();
+        if(searchInput.value != ""){
+            var values = searchInput.value;
+            searchData.classList.remove("active");
+            searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
+            
+        }else{
+            searchData.textContent = "";
+        }
+        }
+        cancelBtn.onclick =()=>{
+        searchBox.classList.remove("active");
+        searchBtn.classList.remove("active");
+        searchInput.classList.remove("active");
+        cancelBtn.classList.remove("active");
+        searchData.classList.toggle("active");
+        searchInput.value = "";
+        }
+    </script>
+    <div class="content">
+        <rbody>
+            <table border = "1" style="margin-left: 200px; margin-top: 100px; width: 80%;min-width: 300px;">
+                <tr style="background-color: rgb(102, 161, 157);">
+                    <th> Tanggal </th>
+                    <th> Nama Surah</th>
+                    <th> Nama Mahasiswa</th>
+                    <th> Selesai</th>
+                </tr>
+                <tr>
+                    <td>21 Maret 2024</td>
+                    <td>An-Naba</td>
+                    <td>Dwi Jelita Adhliyah</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>21 Maret 2024</td>
+                    <td>An-Nazi'at</td>
+                    <td>Mahairani</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>21 Maret 2024</td>
+                    <td>'Abasa</td>
+                    <td>Siska</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>21 Maret 2024</td>
+                    <td>At-Takwiir</td>
+                    <td>Wulandari</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>21 Maret 2024</td>
+                    <td>Al Infithar</td>
+                    <td>Hajat</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>21 Maret 2024</td>
+                    <td>Al-Muthaffifiin</td>
+                    <td>Lita</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>21 Maret 2024</td>
+                    <td>An-Naba</td>
+                    <td>Siska</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>21 Maret 2024</td>
+                    <td>Ath-Thaariq</td>
+                    <td>Dwi Jelita Adhliyah</td>
+                    <td>Selesai</td>
+                </tr>
+
+                <tr>
+                    <td>25 Maret 2024</td>
+                    <td>Ath-Thaariq</td>
+                    <td>Mahairani</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>10 April 2024</td>
+                    <td>Al-A’laa</td>
+                    <td>Hajat</td>
+                    <td>Belum Selesai</td>
+                </tr>
+                    <td>25 Mei 2024</td>
+                    <td>At-Takwir</td>
+                    <td>Dwi Jelita Adhliyah</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>1 Maret 2024</td>
+                    <td>An-Naas</td>
+                    <td>Mahairani</td>
+                    <td>Belum Selesai</td>
+                </tr>
+                <tr>
+                    <td>1 Februari 2024</td>
+                    <td>Al-Falaq</td>
+                    <td>Hajat</td>
+                    <td>Selesai</td>
+                </tr>
+            </table>
+        </rbody>
+    </div>
+    <div class="footer">
+        <h3>LOG OUT</h3>
+    </div>
+
+
+</body>
+</html>
